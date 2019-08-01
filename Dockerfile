@@ -6,7 +6,7 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8 TIMEZONE=Asia/Shanghai
 RUN set -ex \
   # apk
   ; sed -i 's/dl-cdn.alpinelinux.org/mirror.tuna.tsinghua.edu.cn/g' /etc/apk/repositories \
-  ; apk update && apk upgrade \
+  #; apk update && apk upgrade \
   ; rm -rf /var/cache/apk/* \
   ; apk add --no-cache --virtual .build-deps \
         coreutils gcc make libc-dev wget \
