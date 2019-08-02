@@ -1,0 +1,4 @@
+FROM nnurphy/qjs:deb-all as q
+FROM debian:10-slim
+COPY --from=q /usr/local/bin/qjsbn /usr/local/bin/qjs
+CMD [ "qjs" ]
