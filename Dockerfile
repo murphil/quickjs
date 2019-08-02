@@ -15,7 +15,8 @@ RUN set -ex \
   ; cd quickjs-${version} \
   ; sed -i 's!CONFIG_M32=y!!' Makefile \
   ; make \
-  ; make install \
+  #; make install \
+  ; cp qjs /usr/local/bin/ \
   ; cd .. \
   ; rm -rf quickjs-${version} \
   ; apk del .build-deps \
