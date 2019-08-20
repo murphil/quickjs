@@ -9,7 +9,7 @@ RUN set -ex \
   #; apk update && apk upgrade \
   ; apk add --no-cache --virtual .build-deps \
         coreutils gcc make libc-dev wget \
-  ; version=2019-08-10 \
+  ; version=2019-08-18 \
   ; wget -O- https://bellard.org/quickjs/quickjs-${version}.tar.xz \
         | tar Jxf - \
   ; cd quickjs-${version} \
