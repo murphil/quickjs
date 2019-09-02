@@ -1,7 +1,7 @@
 FROM nnurphy/deb
 
 RUN set -ex \
-  ; version=2019-08-18 \
+  ; version=2019-09-01 \
   ; wget -O- https://bellard.org/quickjs/quickjs-${version}.tar.xz \
         | tar Jxf - \
   ; cd quickjs-${version} \
